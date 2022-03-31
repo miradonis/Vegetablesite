@@ -1,0 +1,516 @@
+/* Style für Gemüseprojekt2*/
+
+
+/* 
+  ! Colors
+  ! #F7FCF6   (Header Font, Background Field, Footer Font)
+  ! #313130   (Background Header)
+  ! #55AA37   (Background h1, Buttons Cards)
+  ! #E4E4E4   (Background Cards)
+  ! #FFF      (h1)
+  ! #2e2e2e   (Shadow h1)
+*/
+
+/* GENERELLES */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("../src/img/hintergrund3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Cinzel', serif;
+}
+
+#main {
+  width: 65%;
+  margin: auto;
+  background-color: rgb(248, 247, 247, 0.5);
+}
+
+
+/* Zwischenabstände */
+
+.color {
+  height: 10vh;
+  background-color: #2e2e2e;
+}
+
+
+/* Seitenleiste */
+
+.side {
+  float: left;
+  position: fixed;
+  width: 7vw;
+  height: 70vh;
+  margin-left: 5vw;
+  margin-top: 10.7vh;
+  border: 3px solid;
+  border-image: radial-gradient(#2e2e2e, #4c9232, #4c9232, #2e2e2e ) 1;
+  border-radius: 80px 0 80px 0;
+}
+
+.side > aside p {
+  position: relative;
+  margin-top: 6vh;
+  margin-left: 2.3vw;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Charm', cursive;
+  font-weight: 900;
+  font-size: 1.8rem;
+  word-spacing: 1rem;
+  color: #4c9232;
+}
+
+
+
+/* NAVIGATIONSLEISTE */
+
+header {
+  background-color: #313130;
+  height: 11vh;
+  margin-top: 0;
+}
+
+
+#header-nav > .container-desktop {
+  float: left;
+}
+
+.container-desktop > .row > .col-6 > ul {
+  padding-top: .3rem;
+  padding-left: 3rem;
+}
+
+
+[class~="menu"] { 
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 1rem;
+  
+}
+
+[class|="test"] {
+  text-decoration: none;
+  color: #F7FCF6;
+}
+
+
+#header-nav > form > .search-register {
+  float: right;
+  width: 60%;
+  padding-right: .5rem;
+  padding-top: 2rem;
+  
+}
+
+
+#header-nav > form > .search-register >input {
+  float: left;
+  margin: .1rem 0 0 11rem;
+  height: 1.6rem;
+  width: 35%;
+  border-radius: 6px;
+  background-color: #F7FCF6;
+}
+
+
+.search-register > button {
+  float: right;
+  margin: .2rem 2.5rem 0 0;
+  padding: .4% 2%;
+  border-radius: 5px;
+  background-color: #F7FCF6;
+}
+
+
+.ueberschrift > ul {
+  text-align: center;
+  padding: 0;
+}
+
+
+.auswahl {
+  height: 3.5vw;
+  background-color: rgb(248, 247, 247, 0.1);
+  padding: 0;
+}
+
+.auswahl > ul {
+  margin: 0;
+  padding-top: 1.3rem;
+  text-align: center;
+}
+
+
+.auswahl > ul > li {
+  display: inline;
+  margin: 3%;
+}
+
+
+.auswahl > ul > li a {
+  color: #000000;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.auswahl > ul > li a:hover {
+  color: #1f3f13;
+  transition: .5s;
+}
+
+
+/* ÜBERSCHRIFT UND LISTE */ 
+
+.ueberschrift {
+  background-color: #4c9232;
+  height: 15vh;
+}
+
+
+h1 {
+  font-family: 'Charm', cursive;
+  font-size: 3rem;
+  padding-top: 2rem;
+  margin: 0;
+  text-align: center;
+  color: #e2e2e2;
+  letter-spacing: 1rem;
+  text-shadow: 5px 5px .3px #2e2e2e;
+  text-decoration: blink;
+}
+
+
+/* Text */
+#text > p {
+  margin-top: 6%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+/* Grafiken */
+
+#grafiken {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  grid-gap: .8rem;
+  justify-items: center;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  background-color: #cacaca;
+  border: 1px solid #2e2e2e;
+  height: 30vh;
+}  
+
+#grafiken > .grafik img {
+  height: 7vh;
+  width: auto;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+#grafiken > .grafik > .text > h3 {
+  color: #4c9232;
+  text-decoration: underline;
+}
+
+#grafiken > .grafik > .text > p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* SHOP */
+
+.color {
+  background-image: linear-gradient(#4c9232, #2e2e2e 80%);
+  border-radius: 95px 0 95px 0;
+}
+
+.color > .shop > p {
+  font-family: 'Charm', cursive;
+  font-size: 3.5rem;
+  color: #e2e2e2;
+  letter-spacing: .3rem;
+  text-align: center;
+}
+
+
+
+/* KARTEN */
+
+
+section {
+  margin-top: 5%;
+  border: 1px solid black;
+}
+
+h2 {
+  font-family: 'Charm', cursive;
+  letter-spacing: .2rem;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.back {
+  font-family: 'Charm', cursive;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.back a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.back a:hover {
+  text-decoration: underline;
+  color: #40772c;
+}
+
+.back a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  grid-gap: .8rem;
+  justify-items: center;
+  margin-top: 6%;
+  margin-bottom: 7%;
+}
+
+/* Transition */
+.card {
+  height: 350px;
+  width: 200px;
+  background-color: #E4E4E4;
+  border: solid 2px #1f3f13;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+}
+
+
+
+.card:hover {
+  transition: all 0.3s linear;
+  box-shadow: 4px 4px 9px black;
+}
+
+
+.picture {
+  text-align: center;
+}
+
+
+.picture > img {
+  margin-top: 2.5%;
+  width: 95%;
+  height: 13vh;
+}
+
+
+h3{
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-right: 0px;
+  text-align: center;
+  color: #2e2e2e;  
+}
+
+
+[class|="klick"] {
+  background-color: #4c9232; 
+  border-radius: 5px; 
+  margin-top: 1.2rem;  
+  height: 25px; 
+  width: 150px; 
+}
+
+
+.text_card {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: .6rem;
+  font-weight: bold;
+  color: #313130;
+}
+
+
+
+#footer_menu {
+  background-color: #55AA37;
+  height: 13vh;
+  margin-bottom: 3vh;
+}
+
+#footer_menu > #list_1 {
+  text-align: center;
+  padding-top: 5vh;
+}
+
+#footer_menu > #list_1 > li {
+  display: inline;
+  margin: 5vw;
+}
+
+[class|="end"] {
+  text-decoration: none;
+  color: #e2e2e2;
+  font-size: 1.3rem;
+}
+
+[class|="end"]:hover {
+  color: #2e2e2e;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  [class~="menu"] { 
+    font-size: .8rem;
+  }
+
+  .auswahl > ul {
+    padding-top: 1.1rem;
+  }
+
+  .side > aside p {
+    font-size: 1.2rem;
+    word-spacing: .5rem;
+  }
+
+  #header-nav > form > .search-register {
+    width: 40%;
+    padding-right: .5rem;
+    padding-top: 1.8rem;
+    
+  }
+
+  #header-nav > form > .search-register >input {
+    margin: .1rem 0 0 0;
+    height: 1.4rem;
+    width: 35%;
+  }
+  
+  
+  .search-register > button {
+    float: right;
+    margin: .2rem 2rem 0 0;
+    padding: .3% 1%;
+
+  }
+
+  .auswahl > ul > li a {
+    font-size: .7rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    padding-top: 1.6rem;
+  }
+
+  #text > p {
+    font-size: 1.1rem;
+  }
+
+  #grafiken > .grafik img {
+    height: 6vh;
+    width: auto;
+  }
+
+  #grafiken > .grafik > .text > h3 {
+    font-size: 1rem;
+  }
+  
+  #grafiken > .grafik > .text > p {
+    font-size: .7rem;
+  }
+
+  .color > .shop > p {
+    font-size: 2.2rem;
+    letter-spacing: .2rem;
+  }
+
+  /* Karten */
+  
+  h2 {
+    letter-spacing: .2rem;
+    font-size: 2rem;
+  }
+  
+  .back {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+  }
+
+  .card {
+    height: 56vh;
+    width: 16vw;
+  }
+
+
+.picture > img {
+  margin-top: 3.5%;
+  width: 90%;
+  height: 19vh;
+}
+
+
+h3{
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-right: 0px;
+  text-align: center;
+  color: #2e2e2e;  
+}
+
+
+[class|="klick"] {
+  background-color: #4c9232; 
+  border-radius: 5px; 
+  margin-top: 1.2rem;  
+  height: 25px; 
+  width: 150px; 
+}
+
+
+.text_card {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: .6rem;
+  font-weight: bold;
+  color: #313130;
+}
+
+/* Footer */
+
+[class|="end"] {
+  font-size: 1rem;
+}
+
+}
+
+
+
